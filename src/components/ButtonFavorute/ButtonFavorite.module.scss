@@ -1,0 +1,10 @@
+.buttonFavorite {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+@media (max-width: 989px) {
+    .buttonFavorite {
+        display: none;
+    }
+};
