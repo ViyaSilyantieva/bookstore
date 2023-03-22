@@ -10,14 +10,14 @@ const ButtonFavorite = () => {
     const[active, setActive] = useState(false)
 
     const handleButtonClick = () => {
-        navigate("/favorites")
         setActive(!active)
+        navigate("/favorites")
     }
 
 
     return (
         <div>
-            <button onClick={handleButtonClick} className={styles.buttonFavorite}><img src={active? favoriteact : heart}/></button>
+            <button onClick={handleButtonClick} className={styles.buttonFavorite}><img src={active ? favoriteact : heart}/></button>
         </div>
     )
 };

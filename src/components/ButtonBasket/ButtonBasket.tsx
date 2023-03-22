@@ -10,12 +10,12 @@ const ButtonBasket = () => {
     
     const[active, setActive] = useState(false)
     const handleButtonClick = () => {
-        navigate("/cart")
         setActive(!active)
+        navigate("/cart")
     }
     return (
         <div>
-            <button className={styles.buttonBasket} onClick={handleButtonClick}><img src={active? basketact : basket}/></button>
+            <button className={styles.buttonBasket} onClick={handleButtonClick}><img src={active ? basketact : basket}/></button>
         </div>
     )
 };
