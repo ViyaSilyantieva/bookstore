@@ -1,10 +1,10 @@
-@import "./../../utils/varCss.scss";
+@import "./../../styles/varCss.scss";
 @font-face {
     font-family: "Helios";
-    src: url("./../../fonts/HeliosRegular/HeliosRegular.eot");
-    src: url("./../../fonts/HeliosRegular/HeliosRegular.eot?#iefix")format("embedded-opentype"),
-    url("./../../fonts/HeliosRegular/HeliosRegular.woff") format("woff"),
-    url("./../../fonts/HeliosRegular/HeliosRegular.ttf") format("truetype");
+    src: url("./../../styles/fonts/HeliosRegular/HeliosRegular.eot");
+    src: url("./../../styles/fonts/HeliosRegular/HeliosRegular.eot?#iefix")format("embedded-opentype"),
+    url("./../../styles/fonts/HeliosRegular/HeliosRegular.woff") format("woff"),
+    url("./../../styles/fonts/HeliosRegular/HeliosRegular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 };
@@ -35,7 +35,7 @@
         margin-left: 40px;
     }
 };
-@media (max-width: 991px) {
+@media (max-width: 989px) {
     .container {
         max-width: 911px;
     }

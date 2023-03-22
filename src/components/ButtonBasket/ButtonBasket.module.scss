@@ -1,0 +1,11 @@
+.buttonBasket {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    text-align: center;
+}
+@media (max-width: 991px) {
+    .buttonBasket {
+        margin-right: 20px;
+    }
+};

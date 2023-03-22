@@ -1,0 +1,48 @@
+@import "./../../styles/varCss.scss";
+@font-face {
+    font-family: "Helios";
+    src: url("./../../styles/fonts/HeliosRegular/HeliosRegular.eot");
+    src: url("./../../styles/fonts/HeliosRegular/HeliosRegular.eot?#iefix")format("embedded-opentype"),
+    url("./../../styles/fonts/HeliosRegular/HeliosRegular.woff") format("woff"),
+    url("./../../styles/fonts/HeliosRegular/HeliosRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+};
+
+.input {
+    height: 56px;
+    border: none;
+    width: 90%;
+    font-size: 'Helios';
+    font-size: 16px;
+}
+.buttonSearch {
+    height: 56px;
+    border: none;
+    background-color: white;
+    max-width: 24px;
+    max-height: 24px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+.form {
+    width: 542px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid var(--grey);
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .form {
+        max-width: 542px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 989px) {
+    .form {
+        display: none;
+    }
+}

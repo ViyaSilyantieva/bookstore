@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.container {
+    max-width: 1120px;
+    height: 104px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px;
+    border-style: solid;
+    border-color: transparent transparent var(--grey) transparent;
+}
+.buttonSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    max-width: 138px;
+    max-height: 29px;
+}
+@media (max-width: 1192px) {
+    .container {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+};
+@media (max-width: 768px) {
+    .logo {
+        max-width: 130px;
+        max-height: 27px;
+    }
+};
+@media (max-width: 400px) {
+    .logo {
+        max-width: 122px;
+        max-height: 25px;
+    }
+};
