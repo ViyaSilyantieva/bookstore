@@ -6,7 +6,7 @@ export interface IBookList {
     books: [{
         title: string;
         subtitle: string;
-        isbn: string;
+        isbn13: string;
         price: string;
         image: string;
         url: string;
