@@ -1,0 +1,132 @@
+.container {
+    max-width: 352px;
+    text-align: left;
+    margin-bottom: 48px;
+}
+.backgroundGreen {
+    width: 352px;
+    background-color: var(--green);
+}
+.backgroundPurple {
+    width: 352px;
+    background-color: var(--purple);
+}
+.backgroundBlue {
+    width: 352px;
+    background-color: var(--blue);
+}
+.backgroundOrange {
+    width: 352px;
+    background-color: var(--orange);
+}
+.title {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--primary);
+    margin-top: 20px;
+    height: 64px;
+    margin-bottom: 48px;
+}
+.subtitle {
+    font-family: 'Helios';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--secondary);
+    margin-top: 8px;
+    height: 24px;
+}
+.price {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--primary);
+    margin-top: 40px;
+}
+.rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 1199px) {
+    .container {
+        width: 32%;
+    }
+    .backgroundGreen, .backgroundBlue, .backgroundPurple, .backgroundOrange {
+        max-width: 322px;
+    }
+}
+@media (max-width: 1099px) {
+    .backgroundGreen, .backgroundBlue, .backgroundPurple, .backgroundOrange {
+        max-width: 300px;
+    }
+}
+@media (max-width: 999px) {
+    .backgroundGreen, .backgroundBlue, .backgroundPurple, .backgroundOrange {
+        max-width: 275px;
+    }
+}
+@media (max-width: 925px) {
+    .backgroundGreen, .backgroundBlue, .backgroundPurple, .backgroundOrange {
+        max-width: 260px;
+    }
+}
+@media (max-width: 870px) {
+    .container {
+        width: 45%;
+    }
+    .backgroundGreen, .backgroundBlue, .backgroundPurple, .backgroundOrange {
+        max-width: 328px;
+    }
+}
+@media (max-width: 750px) {
+    .backgroundGreen, .backgroundBlue, .backgroundPurple, .backgroundOrange {
+        max-width: 318px;
+    }
+}
+
+@media (max-width: 715px) {
+    .backgroundGreen, .backgroundBlue, .backgroundPurple, .backgroundOrange {
+        max-width: 300px;
+    }
+}
+@media (max-width: 685px) {
+    .backgroundGreen, .backgroundBlue, .backgroundPurple, .backgroundOrange {
+        max-width: 280px;
+    }
+}
+@media (max-width: 645px) {
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+    .backgroundGreen, .backgroundBlue, .backgroundPurple, .backgroundOrange {
+        max-width: 360px;
+    }
+    .title {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 455px) {
+    .container {
+        max-width: 330px;
+    }
+    .backgroundGreen, .backgroundBlue, .backgroundPurple, .backgroundOrange {
+        max-width: 330px;
+    }
+}
+@media (max-width: 400px) {
+    .container {
+        max-width: 272px;
+    }
+    .backgroundGreen, .backgroundBlue, .backgroundPurple, .backgroundOrange {
+        max-width: 272px;
+    }
+}

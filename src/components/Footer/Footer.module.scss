@@ -1,13 +1,3 @@
-@import "./../../styles/varCss.scss";
-@font-face {
-    font-family: "Helios";
-    src: url("./../../styles/fonts/HeliosRegular/HeliosRegular.eot");
-    src: url("./../../styles/fonts/HeliosRegular/HeliosRegular.eot?#iefix")format("embedded-opentype"),
-    url("./../../styles/fonts/HeliosRegular/HeliosRegular.woff") format("woff"),
-    url("./../../styles/fonts/HeliosRegular/HeliosRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-};
 .container {
     background-color: var(--white);
     height: 95px;
