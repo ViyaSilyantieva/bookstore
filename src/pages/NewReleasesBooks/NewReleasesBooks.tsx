@@ -22,13 +22,14 @@ const NewReleasesBooks = () => {
                 <p className={styles.title}>NEW RELEASES BOOKS</p>
                 <div>
                     <div className={styles.containerCard}>
-                        {data.books.slice(0,12).map(book => <BookCard
-                            image={book.image}
-                            title={book.title}
-                            subtitle={book.subtitle}
-                            price={book.price}
-                            key={book.isbn13}
-                        />)}
+                        {data ? data.books.slice(0,12).map(book => 
+                            <BookCard
+                                image={book.image}
+                                title={book.title}
+                                subtitle={book.subtitle}
+                                price={book.price}
+                                key={book.isbn13}
+                            />) : null}
                     </div>
                 </div>
                 <div>

@@ -14,14 +14,21 @@ interface IBookCard {
 };
 
 
-const BookCard = ({title, subtitle, price, image, url}: IBookCard) => {
+const BookCard = ({title, subtitle, price, image}: IBookCard) => {
+    function changeBackground() {
+        if (price > "$45.00") {
+            return styles.backgroundGreen;
+        } else if (price > "$30.00") {
+            return styles.backgroundPurple;
+        } else if (price > "$15.00") {
+            return styles.backgroundBlue
+        } else return styles.backgroundOrange
+    };
+    
     return (
         <div className={styles.container}>
             <div className={styles.image}>
-                <img className={
-                    price > "$45.00" ? styles.backgroundGreen : 
-                    price > "$30.00" ? styles.backgroundPurple : 
-                    price > "$15.00" ? styles.backgroudBlue : styles.backgroundOrange} src={image}/>
+                <img className={changeBackground()} src={image}/>
             </div>
             <div>
                 <p className={styles.title}>{title}</p>
