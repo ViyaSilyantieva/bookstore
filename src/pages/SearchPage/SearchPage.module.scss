@@ -1,0 +1,75 @@
+.container {
+    max-width: 1120px;
+    margin: auto;
+}
+.containerCard {
+    max-width: 1120px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 49px;
+}
+.containerButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px;
+    border-style: solid;
+    border-color: var(--grey) transparent transparent transparent;
+    margin: auto;
+}
+.button {
+    margin-top: 48px;
+    width: 67px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background-color: white;
+    font-family: 'Helios';
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.buttonNotActive {
+    margin-top: 48px;
+    width: 67px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background-color: white;
+    font-family: 'Helios';
+    color: var(--secondary);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.containerError {
+    text-align: center;
+    padding-top: 200px;
+    height: 600px;
+    max-width: 1120px;
+}
+.titleSearch {
+    font-family: 'Bebas Neue';
+    font-style: 'Bold';
+    font-size: 56px;
+    line-height: 64px;
+    text-align: left;
+    margin-bottom: 0px;
+}
+.subtitleSearch {
+    font-family: 'Helios';
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    margin-top: 16px;
+    color: var(--secondary);
+}
+

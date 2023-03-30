@@ -1,20 +1,19 @@
-import React from "react";
+import React, {useContext} from "react";
 import styles from "./BookCard.module.scss";
 import stars from "../../image/stars.svg";
 
-
-
-interface IBookCard {
+export interface IBookCard {
     title: string;
     subtitle: string;
     isbn13?: string;
     price: string;
     image: string;
     url?: string;
+    favorite?: boolean;
 };
 
 
-const BookCard = ({title, subtitle, price, image}: IBookCard) => {
+const BookCard = ({title, subtitle, price, image, favorite}: IBookCard) => {
     function changeBackground() {
         if (price > "$45.00") {
             return styles.backgroundGreen;
@@ -24,7 +23,6 @@ const BookCard = ({title, subtitle, price, image}: IBookCard) => {
             return styles.backgroundBlue
         } else return styles.backgroundOrange
     };
-    
     return (
         <div className={styles.container}>
             <div className={styles.image}>
