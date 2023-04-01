@@ -24,18 +24,19 @@ const SearchPage = () => {
         })();
     }, [value, page])
 
-    const getNextPage = (e: any) => {
+    const getNextPage = (e: React.MouseEvent) => {
         e.preventDefault()
         if ((Number(posts?.total) / 10) > page)  {    
             setPage(page + 1)
         } else return null;
     };   
 
-    const getPreviousPage = (e: any) => {
+    const getPreviousPage = (e: React.MouseEvent) => {
         e.preventDefault()
         if (page > 1){
             setPage(page - 1)
         }
+        console.log(e)
     };
 
     if (posts) {

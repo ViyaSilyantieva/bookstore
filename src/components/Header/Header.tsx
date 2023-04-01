@@ -10,9 +10,6 @@ import BurgerMenu from "../BurgerMenu/BurgerMenu";
 
 
 const Header = () => {
-    // const [searchResult, setSearchResult] = useState('')
-
-    // const changeSearch = (input: string) => setSearchResult(input)
 
     return (
         <div>
@@ -20,7 +17,6 @@ const Header = () => {
                 <p><img className={styles.logo} src={logo}/></p>
                 <div>
                     <Search
-                        // changeSearch={changeSearch}
                     />
                 </div>
                 <div className={styles.buttonSection}>
