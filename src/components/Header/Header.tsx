@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "./Header.module.scss";
 import ButtonUser from "../ButtonUser/ButtonUser";
 import ButtonFavorite from "../ButtonFavorute/ButtonFavorite";
@@ -16,7 +16,8 @@ const Header = () => {
             <div className={styles.container}>
                 <p><img className={styles.logo} src={logo}/></p>
                 <div>
-                    <Search/>
+                    <Search
+                    />
                 </div>
                 <div className={styles.buttonSection}>
                     <ButtonFavorite/>
