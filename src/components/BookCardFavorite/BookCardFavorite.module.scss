@@ -1,0 +1,73 @@
+.container {
+    width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 48px;
+    border: 1px;
+    border-style: solid;
+    border-color: transparent transparent var(--grey) transparent;
+}
+.containerCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contsinerText {
+    width: 446px;
+    margin-left: 32px;
+    text-align: left;
+    align-items: center;
+}
+.containerInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.backgroundGreen {
+    width: 256px;
+    background-color: var(--green);
+}
+.backgroundPurple {
+    width: 256px;
+    background-color: var(--purple);
+}
+.backgroundBlue {
+    width: 256px;
+    background-color: var(--blue);
+}
+.backgroundOrange {
+    width: 256px;
+    background-color: var(--orange);
+}
+.title {
+    font-family: 'Bebas Neue';
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--primary);
+    margin-bottom: 0;
+}
+.subtitle {
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--secondary);
+}
+.price {
+    font-family: 'Bebas Neue';
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--primary);
+}
+.button {
+    width: 200px;
+    height: 30px;
+    font-family: 'Bebas Neue';
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--primary);
+    background-color: var(--grey);
+    border: none;
+}

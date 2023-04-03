@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import styles from "./Search.module.scss";
 import loupe from "../../image/loupe.svg";
 import { useNavigate } from "react-router-dom";
@@ -6,9 +6,8 @@ import { useSearchContext } from "../../context/searchParams";
 
 
 const Search = () => {
-
+    
     const navigate = useNavigate()
-
     const {value, getValue} = useSearchContext()
 
     const search = (e: any) => {

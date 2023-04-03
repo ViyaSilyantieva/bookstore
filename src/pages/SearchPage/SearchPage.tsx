@@ -36,7 +36,6 @@ const SearchPage = () => {
         if (page > 1){
             setPage(page - 1)
         }
-        console.log(e)
     };
 
     if (posts) {
@@ -52,6 +51,7 @@ const SearchPage = () => {
                         image={post.image}
                         price={post.price}
                         key={post.isbn13}
+                        isbn13={post.isbn13}
                     />) : <ErrorMessage/>}
                 </div>
                 <div className={styles.containerButton}>

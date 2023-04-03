@@ -1,6 +1,8 @@
-import React, {useContext} from "react";
+import React, {useContext, useState} from "react";
 import styles from "./BookCard.module.scss";
-import stars from "../../image/stars.svg";
+import { Context } from "../../context/favorite";
+import { useBookContext } from "../../context/oneBook";
+import { useNavigate } from "react-router-dom";
 
 export interface IBookCard {
     title: string;
@@ -9,11 +11,27 @@ export interface IBookCard {
     price: string;
     image: string;
     url?: string;
-    favorite?: boolean;
 };
 
+const BookCard = ({title, subtitle, price, image, isbn13}: IBookCard) => {
+    
+    const [context, setContext] = useContext(Context)
+    const [button, setButton] = useState(false)
+    const {id, getId} = useBookContext()
+    const navigate = useNavigate()
 
-const BookCard = ({title, subtitle, price, image, favorite}: IBookCard) => {
+    const getContext = (e: React.MouseEvent) => {
+        e.stopPropagation()
+        e.preventDefault()
+        context.push({title, subtitle, price, image, isbn13})
+        setButton(!button)
+    }
+
+    const getIsbn = () => {
+        getId?.(`${isbn13}`)
+        navigate("/book")
+    }
+
     function changeBackground() {
         if (price > "$45.00") {
             return styles.backgroundGreen;
@@ -23,8 +41,9 @@ const BookCard = ({title, subtitle, price, image, favorite}: IBookCard) => {
             return styles.backgroundBlue
         } else return styles.backgroundOrange
     };
+
     return (
-        <div className={styles.container}>
+        <div className={styles.container} onClick={getIsbn}>
             <div className={styles.image}>
                 <img className={changeBackground()} src={image}/>
             </div>
@@ -34,11 +53,10 @@ const BookCard = ({title, subtitle, price, image, favorite}: IBookCard) => {
             </div>
             <div className={styles.rating}>
                 <p className={styles.price}>{price}</p>
-                <img src={stars}/>
+                <button disabled={button ? true : false} className={button ? styles.buttonAdd : styles.button} onClick={getContext}>ADD TO FAVORITE</button>
             </div>
         </div>
     )
 };
-
 
 export default BookCard;
