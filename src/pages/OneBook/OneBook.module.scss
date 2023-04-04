@@ -1,0 +1,25 @@
+.containerContent {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+.buttonBack {
+    cursor: pointer;
+    border: none;
+    margin-top: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: white;
+}
+.containerBook {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+.subtitle {
+    text-align: left;
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    line-height: 60px;
+}

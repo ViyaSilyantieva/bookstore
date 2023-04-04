@@ -1,0 +1,25 @@
+.tab {
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--secondary);
+    margin-right: 80px;
+    padding-bottom: 24px;
+    background-color: white;
+    width: 160px;
+    border: none;
+}
+.tab:hover {
+    color: var(--primary);
+}
+.tabdisabled {
+    color: var(--primary);
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px;
+    padding-bottom: 24px;
+    margin-right: 80px;
+    border-style: solid;
+    border-color: transparent transparent var(--primary) transparent;
+    background-color: white;
+    width: 160px;
+}

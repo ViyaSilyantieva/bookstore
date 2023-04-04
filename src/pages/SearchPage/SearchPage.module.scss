@@ -8,7 +8,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 49px;
+    margin-top: 48px;
 }
 .containerButton {
     display: flex;
@@ -18,7 +18,7 @@
     border: 1px;
     border-style: solid;
     border-color: var(--grey) transparent transparent transparent;
-    margin: auto;
+    margin: 48px auto;
 }
 .button {
     margin-top: 48px;
@@ -29,7 +29,7 @@
     align-items: center;
     border: none;
     background-color: white;
-    font-family: 'Helios';
+    font-family: 'Roboto';
     color: var(--primary);
     font-size: 16px;
     font-weight: 600;
@@ -65,7 +65,7 @@
     margin-bottom: 0px;
 }
 .subtitleSearch {
-    font-family: 'Helios';
+    font-family: 'Roboto';
     font-size: 16px;
     line-height: 24px;
     text-align: left;

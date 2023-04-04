@@ -28,6 +28,7 @@ const NewReleasesBooks = () => {
                                 title={book.title}
                                 subtitle={book.subtitle}
                                 price={book.price}
+                                isbn13={book.isbn13}
                                 key={book.isbn13}
                             />) : null}
                     </div>
