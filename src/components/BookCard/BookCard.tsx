@@ -53,7 +53,7 @@ const BookCard = ({title, subtitle, price, image, isbn13}: IBookCard) => {
             </div>
             <div className={styles.rating}>
                 <p className={styles.price}>{price}</p>
-                <button disabled={button ? true : false} className={button ? styles.buttonAdd : styles.button} onClick={getContext}>ADD TO FAVORITE</button>
+                <button disabled={button} className={button ? styles.buttonAdd : styles.button} onClick={getContext}>ADD TO FAVORITE</button>
             </div>
         </div>
     )

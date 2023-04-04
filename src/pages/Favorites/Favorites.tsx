@@ -12,7 +12,7 @@ const Favorites = () => {
     const navigate = useNavigate()
 
 
-    let clearContext = Object.values(context.reduce((acc: any, cur: any)=>Object.assign(acc,{[cur.image]:cur}),{}))
+    const clearContext = Object.values(context.reduce((acc: any, cur: any)=>Object.assign(acc,{[cur.image]:cur}),{}))
 
     if(clearContext.length > 0) {
     return (
